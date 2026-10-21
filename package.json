@@ -1,0 +1,39 @@
+{
+  "name": "csharp-smart-semicolon",
+  "displayName": "C# Smart Semicolon",
+  "description": "Rider-like smart semicolon: typing ';' inside parentheses moves it to the end of the line.",
+  "version": "0.1.0",
+  "publisher": "saix93",
+  "author": "Raúl Torres González",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saix93/vscode-smart-semicolon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saix93/vscode-smart-semicolon/issues"
+  },
+  "homepage": "https://github.com/saix93/vscode-smart-semicolon#readme",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": ["Programming Languages", "Other"],
+  "keywords": ["csharp", "c#", "unity", "rider", "semicolon"],
+  "activationEvents": ["onLanguage:csharp"],
+  "main": "./out/extension.js",
+  "contributes": {},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node --test \"out/test/**/*.test.js\"",
+    "package": "vsce package",
+    "deploy": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "1.64.0",
+    "@vscode/vsce": "^3.0.0",
+    "typescript": "^5.4.0"
+  }
+}

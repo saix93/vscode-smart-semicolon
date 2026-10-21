@@ -13,7 +13,7 @@ async function typeSemicolon(content: string, language?: string): Promise<string
 
 suite('Smart Semicolon', () => {
     suiteSetup(async () => {
-        await vscode.extensions.getExtension('saix93.csharp-smart-semicolon')!.activate();
+        await vscode.extensions.getExtension('Saix93.csharp-smart-semicolon')!.activate();
     });
 
     teardown(closeAllEditors);

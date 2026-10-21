@@ -3,7 +3,7 @@
   "displayName": "C# Smart Semicolon",
   "description": "Rider-like smart semicolon: typing ';' inside parentheses moves it to the end of the line.",
   "version": "0.1.0",
-  "publisher": "saix93",
+  "publisher": "Saix93",
   "author": "Raúl Torres González",
   "license": "MIT",
   "repository": {

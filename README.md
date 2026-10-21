@@ -13,6 +13,8 @@ Foo(|);                  // type ';'
 Foo();|                  // no duplicate semicolon, the cursor just moves
 ```
 
+A single <kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes the semicolon.
+
 ## When the semicolon stays where it was typed
 
 - Outside parentheses: `x = 1;`
@@ -37,9 +39,11 @@ None. The extension works on the text alone and does not need a language server.
 
 ```sh
 npm install
-npm test          # compile and run the unit tests
+npm test          # compile, then run the unit and integration tests
 npm run package   # build the .vsix
 ```
+
+The integration tests download a separate copy of VS Code into `.vscode-test/` and run inside it.
 
 Press <kbd>F5</kbd> in VS Code to launch an Extension Development Host.
 

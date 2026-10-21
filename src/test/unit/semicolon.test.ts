@@ -1,6 +1,5 @@
 import * as assert from 'node:assert/strict';
-import { describe, it } from 'node:test';
-import { planSemicolon, scanLine } from '../semicolon';
+import { planSemicolon, scanLine } from '../../semicolon';
 
 // Simulates typing ';' at '|' in `line` and returns the resulting line, with '|' at the cursor.
 function type(line: string): string {
